@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/MarcoFaretra93/hb-atac#readme",
   "dependencies": {
-    "seneca": "^2.0.1"
+    "mongoose": "^4.4.12",
+    "seneca": "^2.0.1",
+    "xmlrpc": "^1.3.1"
   }
 }
