@@ -97,4 +97,7 @@ seneca.add({role:'mongo', cmd:'getAll'}, function(args, callback) {
 	});
 })
 
-seneca.listen()
+seneca.listen({
+	host: 'localhost',
+	port: 3000
+})

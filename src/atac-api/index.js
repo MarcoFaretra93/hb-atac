@@ -72,4 +72,7 @@ seneca.add({role:'atac', cmd:'getFermate'}, function(args, callback) {
   });
 })
 
-seneca.listen()
+seneca.listen({
+  host: 'localhost',
+  port: 3001
+})
