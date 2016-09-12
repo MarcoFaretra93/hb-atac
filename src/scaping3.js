@@ -1,5 +1,5 @@
 var file = require('./file2.json');
-var request = require('request');
+var request = require('sync-request');
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/schedetecniche');
@@ -20,23 +20,24 @@ var SchedeTecniche = mongoose.model('SchedeTecniche', htmlSchema);
 
 var temp = []
 
-file.map(function(value) {
+/*file.map(function(value) {
 	Object.keys(value.models).map(function(key) {
 		value.models[key].map(function(v) {
 			temp.push('http://www.assicurazione.it'+v.next+ ' ');
 		});
 	});
-});
+});*/
 
-
+temp = ['http://www.assicurazione.it/audi/a3_20_fsi_attraction_tiptr_3pt.html']
 
 for(element in temp) {
-	request(temp[element], function(error, response, body) {
-		var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: body});
+	var res = request('GET', temp[element]);
+	var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: res.getBody()});
 		entry.save(function(err, data) {
 			if(err) console.log(err);
 			else console.log('fatto');
-		});
+	});
+
 		/*fs.writeFile("/Users/marcofaretra/Documents/scraping_assicurazioni/assicurazione_html/" + temp[element].slice(28).replace('/','_') + ".html", body, function(err) {
 		    if(err) {
 		        return console.log(err);
@@ -44,5 +45,4 @@ for(element in temp) {
 
 		    console.log("The file was saved!");
 		});*/
-	});
 }
