@@ -31,7 +31,7 @@ file.map(function(value) {
 
 
 for(element in temp) {
-	request(temp[element], function(error, response, body) {
+	var r = request(temp[element], function(error, response, body) {
 		var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: body});
 		entry.save(function(err, data) {
 			if(err) console.log(err);
@@ -45,4 +45,5 @@ for(element in temp) {
 		    console.log("The file was saved!");
 		});*/
 	});
+	r.abort();
 }
