@@ -29,7 +29,7 @@ file.map(function(value) {
 });
 
 for(element in temp) {
-	console.log(temp);
+	console.log(temp[element]);
 	var r = request(temp[element], function(error, response, body) {
 		console.log('arrivo');
 		var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: body});
