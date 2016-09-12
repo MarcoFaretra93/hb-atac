@@ -1,0 +1,724 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-curl' ]
+2 info using npm@3.7.3
+3 info using node@v5.9.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node-curl
+8 silly fetchNamedPackageData node-curl
+9 silly mapToRegistry name node-curl
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/node-curl
+13 verbose request uri https://registry.npmjs.org/node-curl
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 15:47:45
+16 verbose request id 9e29e49961103acb
+17 verbose etag "6BRQTSQA310L5MQWOUIIC9A6P"
+18 http request GET https://registry.npmjs.org/node-curl
+19 http 304 https://registry.npmjs.org/node-curl
+20 verbose headers { date: 'Mon, 12 Sep 2016 13:47:45 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   etag: '"6BRQTSQA310L5MQWOUIIC9A6P"',
+20 verbose headers   age: '39',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1473688065.596708,VS0,VE0',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Mon, 12 Sep 2016 13:47:45 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     etag: '"6BRQTSQA310L5MQWOUIIC9A6P"',
+21 silly get     age: '39',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-lcy1130-LCY',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1473688065.596708,VS0,VE0',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose etag https://registry.npmjs.org/node-curl from cache
+23 verbose get saving node-curl to /Users/marcofaretra/.npm/registry.npmjs.org/node-curl/.cache.json
+24 verbose correctMkdir /Users/marcofaretra/.npm correctMkdir not in flight; initializing
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule node-curl@0.3.3 checking installable status
+38 silly cache add args [ 'node-curl', null ]
+39 verbose cache add spec node-curl
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'node-curl',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'node-curl',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed node-curl@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for node-curl
+43 info addNameTag [ 'node-curl', 'latest' ]
+44 silly mapToRegistry name node-curl
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/node-curl
+48 verbose addNameTag registry:https://registry.npmjs.org/node-curl not in flight; fetching
+49 verbose get https://registry.npmjs.org/node-curl not expired, no request
+50 silly addNameTag next cb for node-curl with tag latest
+51 silly addNamed node-curl@0.3.3
+52 verbose addNamed "0.3.3" is a plain semver version for node-curl
+53 silly cache afterAdd node-curl@0.3.3
+54 verbose afterAdd /Users/marcofaretra/.npm/node-curl/0.3.3/package/package.json not in flight; writing
+55 verbose correctMkdir /Users/marcofaretra/.npm correctMkdir not in flight; initializing
+56 verbose afterAdd /Users/marcofaretra/.npm/node-curl/0.3.3/package/package.json written
+57 silly loadAllDepsIntoIdealTree Finishing
+58 silly idealTree:prePrune hb-atac@1.0.0
+58 silly idealTree:prePrune ├── ansi-regex@2.0.0
+58 silly idealTree:prePrune ├── ansi-styles@2.2.1
+58 silly idealTree:prePrune ├── asap@2.0.4
+58 silly idealTree:prePrune ├── asn1@0.2.3
+58 silly idealTree:prePrune ├── assert-plus@0.2.0
+58 silly idealTree:prePrune ├── async@1.5.2
+58 silly idealTree:prePrune ├── aws-sign2@0.6.0
+58 silly idealTree:prePrune ├── aws4@1.4.1
+58 silly idealTree:prePrune ├─┬ bcrypt-pbkdf@1.0.0
+58 silly idealTree:prePrune │ └── tweetnacl@0.14.3
+58 silly idealTree:prePrune ├─┬ bl@1.1.2
+58 silly idealTree:prePrune │ ├── isarray@1.0.0
+58 silly idealTree:prePrune │ └── readable-stream@2.0.6
+58 silly idealTree:prePrune ├── bluebird@2.10.2
+58 silly idealTree:prePrune ├── boom@2.10.1
+58 silly idealTree:prePrune ├── bson@0.4.23
+58 silly idealTree:prePrune ├── caseless@0.11.0
+58 silly idealTree:prePrune ├── chalk@1.1.3
+58 silly idealTree:prePrune ├── combined-stream@1.0.5
+58 silly idealTree:prePrune ├── commander@2.9.0
+58 silly idealTree:prePrune ├─┬ concat-stream@1.5.2
+58 silly idealTree:prePrune │ ├── isarray@1.0.0
+58 silly idealTree:prePrune │ └── readable-stream@2.0.6
+58 silly idealTree:prePrune ├── core-util-is@1.0.2
+58 silly idealTree:prePrune ├── cryptiles@2.0.5
+58 silly idealTree:prePrune ├─┬ dashdash@1.14.0
+58 silly idealTree:prePrune │ └── assert-plus@1.0.0
+58 silly idealTree:prePrune ├── debug@2.2.0
+58 silly idealTree:prePrune ├── delayed-stream@1.0.0
+58 silly idealTree:prePrune ├── ecc-jsbn@0.1.1
+58 silly idealTree:prePrune ├── es6-promise@3.0.2
+58 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+58 silly idealTree:prePrune ├── extend@3.0.0
+58 silly idealTree:prePrune ├── extsprintf@1.0.2
+58 silly idealTree:prePrune ├── forever-agent@0.6.1
+58 silly idealTree:prePrune ├─┬ form-data@1.0.1
+58 silly idealTree:prePrune │ ├── async@2.0.1
+58 silly idealTree:prePrune │ └── lodash@4.15.0
+58 silly idealTree:prePrune ├── generate-function@2.0.0
+58 silly idealTree:prePrune ├── generate-object-property@1.2.0
+58 silly idealTree:prePrune ├─┬ getpass@0.1.6
+58 silly idealTree:prePrune │ └── assert-plus@1.0.0
+58 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+58 silly idealTree:prePrune ├── har-validator@2.0.6
+58 silly idealTree:prePrune ├── has-ansi@2.0.0
+58 silly idealTree:prePrune ├── hawk@3.1.3
+58 silly idealTree:prePrune ├── hoek@2.16.3
+58 silly idealTree:prePrune ├── hooks-fixed@1.1.0
+58 silly idealTree:prePrune ├── http-basic@2.5.1
+58 silly idealTree:prePrune ├── http-response-object@1.1.0
+58 silly idealTree:prePrune ├── http-signature@1.1.1
+58 silly idealTree:prePrune ├── inherits@2.0.1
+58 silly idealTree:prePrune ├── is-my-json-valid@2.13.1
+58 silly idealTree:prePrune ├── is-property@1.0.2
+58 silly idealTree:prePrune ├── is-typedarray@1.0.0
+58 silly idealTree:prePrune ├── isarray@0.0.1
+58 silly idealTree:prePrune ├── isstream@0.1.2
+58 silly idealTree:prePrune ├── jodid25519@1.0.2
+58 silly idealTree:prePrune ├── jsbn@0.1.0
+58 silly idealTree:prePrune ├── json-schema@0.2.2
+58 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+58 silly idealTree:prePrune ├── jsonpointer@2.0.0
+58 silly idealTree:prePrune ├── jsprim@1.3.0
+58 silly idealTree:prePrune ├── kareem@1.0.1
+58 silly idealTree:prePrune ├── lodash@3.10.1
+58 silly idealTree:prePrune ├── mime-db@1.23.0
+58 silly idealTree:prePrune ├── mime-types@2.1.11
+58 silly idealTree:prePrune ├── mongodb-core@1.3.16
+58 silly idealTree:prePrune ├── mongodb@2.1.16
+58 silly idealTree:prePrune ├── mongoose@4.4.12
+58 silly idealTree:prePrune ├── mpath@0.2.1
+58 silly idealTree:prePrune ├── mpromise@0.5.5
+58 silly idealTree:prePrune ├─┬ mquery@1.10.0
+58 silly idealTree:prePrune │ └── sliced@0.0.5
+58 silly idealTree:prePrune ├── ms@0.7.1
+58 silly idealTree:prePrune ├── muri@1.1.0
+58 silly idealTree:prePrune ├── node-curl@0.3.3
+58 silly idealTree:prePrune ├── node-uuid@1.4.7
+58 silly idealTree:prePrune ├── oauth-sign@0.8.2
+58 silly idealTree:prePrune ├── pinkie-promise@2.0.1
+58 silly idealTree:prePrune ├── pinkie@2.0.4
+58 silly idealTree:prePrune ├── process-nextick-args@1.0.7
+58 silly idealTree:prePrune ├── promise@7.1.1
+58 silly idealTree:prePrune ├── qs@6.2.1
+58 silly idealTree:prePrune ├── readable-stream@1.0.31
+58 silly idealTree:prePrune ├── regexp-clone@0.0.1
+58 silly idealTree:prePrune ├─┬ request-promise-core@1.1.1
+58 silly idealTree:prePrune │ └── lodash@4.15.0
+58 silly idealTree:prePrune ├─┬ request-promise@4.1.1
+58 silly idealTree:prePrune │ └── bluebird@3.4.6
+58 silly idealTree:prePrune ├── request@2.74.0
+58 silly idealTree:prePrune ├── require_optional@1.0.0
+58 silly idealTree:prePrune ├── resolve-from@2.0.0
+58 silly idealTree:prePrune ├── sax@0.6.1
+58 silly idealTree:prePrune ├── semver@5.1.0
+58 silly idealTree:prePrune ├── sliced@1.0.1
+58 silly idealTree:prePrune ├── sntp@1.0.9
+58 silly idealTree:prePrune ├── split2
+58 silly idealTree:prePrune ├─┬ sshpk@1.10.0
+58 silly idealTree:prePrune │ └── assert-plus@1.0.0
+58 silly idealTree:prePrune ├── stealthy-require@1.0.0
+58 silly idealTree:prePrune ├── string_decoder@0.10.31
+58 silly idealTree:prePrune ├── stringstream@0.0.5
+58 silly idealTree:prePrune ├── strip-ansi@3.0.1
+58 silly idealTree:prePrune ├── supports-color@2.0.0
+58 silly idealTree:prePrune ├── sync-request@3.0.1
+58 silly idealTree:prePrune ├── then-request@2.2.0
+58 silly idealTree:prePrune ├── tough-cookie@2.3.1
+58 silly idealTree:prePrune ├── tunnel-agent@0.4.3
+58 silly idealTree:prePrune ├── tweetnacl@0.13.3
+58 silly idealTree:prePrune ├── typedarray@0.0.6
+58 silly idealTree:prePrune ├── util-deprecate@1.0.2
+58 silly idealTree:prePrune ├── verror@1.3.6
+58 silly idealTree:prePrune ├── xmlbuilder@2.6.5
+58 silly idealTree:prePrune ├── xmlrpc@1.3.1
+58 silly idealTree:prePrune ├── xtend@4.0.1
+58 silly idealTree:prePrune └── zig
+59 silly loadIdealTree Finishing
+60 silly currentTree hb-atac@1.0.0
+60 silly currentTree ├── ansi-regex@2.0.0
+60 silly currentTree ├── ansi-styles@2.2.1
+60 silly currentTree ├── asap@2.0.4
+60 silly currentTree ├── asn1@0.2.3
+60 silly currentTree ├── assert-plus@0.2.0
+60 silly currentTree ├── async@1.5.2
+60 silly currentTree ├── aws-sign2@0.6.0
+60 silly currentTree ├── aws4@1.4.1
+60 silly currentTree ├─┬ bcrypt-pbkdf@1.0.0
+60 silly currentTree │ └── tweetnacl@0.14.3
+60 silly currentTree ├─┬ bl@1.1.2
+60 silly currentTree │ ├── isarray@1.0.0
+60 silly currentTree │ └── readable-stream@2.0.6
+60 silly currentTree ├── bluebird@2.10.2
+60 silly currentTree ├── boom@2.10.1
+60 silly currentTree ├── bson@0.4.23
+60 silly currentTree ├── caseless@0.11.0
+60 silly currentTree ├── chalk@1.1.3
+60 silly currentTree ├── combined-stream@1.0.5
+60 silly currentTree ├── commander@2.9.0
+60 silly currentTree ├─┬ concat-stream@1.5.2
+60 silly currentTree │ ├── isarray@1.0.0
+60 silly currentTree │ └── readable-stream@2.0.6
+60 silly currentTree ├── core-util-is@1.0.2
+60 silly currentTree ├── cryptiles@2.0.5
+60 silly currentTree ├─┬ dashdash@1.14.0
+60 silly currentTree │ └── assert-plus@1.0.0
+60 silly currentTree ├── debug@2.2.0
+60 silly currentTree ├── delayed-stream@1.0.0
+60 silly currentTree ├── ecc-jsbn@0.1.1
+60 silly currentTree ├── es6-promise@3.0.2
+60 silly currentTree ├── escape-string-regexp@1.0.5
+60 silly currentTree ├── extend@3.0.0
+60 silly currentTree ├── extsprintf@1.0.2
+60 silly currentTree ├── forever-agent@0.6.1
+60 silly currentTree ├─┬ form-data@1.0.1
+60 silly currentTree │ ├── async@2.0.1
+60 silly currentTree │ └── lodash@4.15.0
+60 silly currentTree ├── generate-function@2.0.0
+60 silly currentTree ├── generate-object-property@1.2.0
+60 silly currentTree ├─┬ getpass@0.1.6
+60 silly currentTree │ └── assert-plus@1.0.0
+60 silly currentTree ├── graceful-readlink@1.0.1
+60 silly currentTree ├── har-validator@2.0.6
+60 silly currentTree ├── has-ansi@2.0.0
+60 silly currentTree ├── hawk@3.1.3
+60 silly currentTree ├── hoek@2.16.3
+60 silly currentTree ├── hooks-fixed@1.1.0
+60 silly currentTree ├── http-basic@2.5.1
+60 silly currentTree ├── http-response-object@1.1.0
+60 silly currentTree ├── http-signature@1.1.1
+60 silly currentTree ├── inherits@2.0.1
+60 silly currentTree ├── is-my-json-valid@2.13.1
+60 silly currentTree ├── is-property@1.0.2
+60 silly currentTree ├── is-typedarray@1.0.0
+60 silly currentTree ├── isarray@0.0.1
+60 silly currentTree ├── isstream@0.1.2
+60 silly currentTree ├── jodid25519@1.0.2
+60 silly currentTree ├── jsbn@0.1.0
+60 silly currentTree ├── json-schema@0.2.2
+60 silly currentTree ├── json-stringify-safe@5.0.1
+60 silly currentTree ├── jsonpointer@2.0.0
+60 silly currentTree ├── jsprim@1.3.0
+60 silly currentTree ├── kareem@1.0.1
+60 silly currentTree ├── lodash@3.10.1
+60 silly currentTree ├── mime-db@1.23.0
+60 silly currentTree ├── mime-types@2.1.11
+60 silly currentTree ├── mongodb-core@1.3.16
+60 silly currentTree ├── mongodb@2.1.16
+60 silly currentTree ├── mongoose@4.4.12
+60 silly currentTree ├── mpath@0.2.1
+60 silly currentTree ├── mpromise@0.5.5
+60 silly currentTree ├─┬ mquery@1.10.0
+60 silly currentTree │ └── sliced@0.0.5
+60 silly currentTree ├── ms@0.7.1
+60 silly currentTree ├── muri@1.1.0
+60 silly currentTree ├── node-uuid@1.4.7
+60 silly currentTree ├── oauth-sign@0.8.2
+60 silly currentTree ├── pinkie-promise@2.0.1
+60 silly currentTree ├── pinkie@2.0.4
+60 silly currentTree ├── process-nextick-args@1.0.7
+60 silly currentTree ├── promise@7.1.1
+60 silly currentTree ├── qs@6.2.1
+60 silly currentTree ├── readable-stream@1.0.31
+60 silly currentTree ├── regexp-clone@0.0.1
+60 silly currentTree ├─┬ request-promise-core@1.1.1
+60 silly currentTree │ └── lodash@4.15.0
+60 silly currentTree ├─┬ request-promise@4.1.1
+60 silly currentTree │ └── bluebird@3.4.6
+60 silly currentTree ├── request@2.74.0
+60 silly currentTree ├── require_optional@1.0.0
+60 silly currentTree ├── resolve-from@2.0.0
+60 silly currentTree ├── sax@0.6.1
+60 silly currentTree ├── semver@5.1.0
+60 silly currentTree ├── sliced@1.0.1
+60 silly currentTree ├── sntp@1.0.9
+60 silly currentTree ├── split2
+60 silly currentTree ├─┬ sshpk@1.10.0
+60 silly currentTree │ └── assert-plus@1.0.0
+60 silly currentTree ├── stealthy-require@1.0.0
+60 silly currentTree ├── string_decoder@0.10.31
+60 silly currentTree ├── stringstream@0.0.5
+60 silly currentTree ├── strip-ansi@3.0.1
+60 silly currentTree ├── supports-color@2.0.0
+60 silly currentTree ├── sync-request@3.0.1
+60 silly currentTree ├── then-request@2.2.0
+60 silly currentTree ├── tough-cookie@2.3.1
+60 silly currentTree ├── tunnel-agent@0.4.3
+60 silly currentTree ├── tweetnacl@0.13.3
+60 silly currentTree ├── typedarray@0.0.6
+60 silly currentTree ├── util-deprecate@1.0.2
+60 silly currentTree ├── verror@1.3.6
+60 silly currentTree ├── xmlbuilder@2.6.5
+60 silly currentTree ├── xmlrpc@1.3.1
+60 silly currentTree ├── xtend@4.0.1
+60 silly currentTree └── zig
+61 silly idealTree hb-atac@1.0.0
+61 silly idealTree ├── ansi-regex@2.0.0
+61 silly idealTree ├── ansi-styles@2.2.1
+61 silly idealTree ├── asap@2.0.4
+61 silly idealTree ├── asn1@0.2.3
+61 silly idealTree ├── assert-plus@0.2.0
+61 silly idealTree ├── async@1.5.2
+61 silly idealTree ├── aws-sign2@0.6.0
+61 silly idealTree ├── aws4@1.4.1
+61 silly idealTree ├─┬ bcrypt-pbkdf@1.0.0
+61 silly idealTree │ └── tweetnacl@0.14.3
+61 silly idealTree ├─┬ bl@1.1.2
+61 silly idealTree │ ├── isarray@1.0.0
+61 silly idealTree │ └── readable-stream@2.0.6
+61 silly idealTree ├── bluebird@2.10.2
+61 silly idealTree ├── boom@2.10.1
+61 silly idealTree ├── bson@0.4.23
+61 silly idealTree ├── caseless@0.11.0
+61 silly idealTree ├── chalk@1.1.3
+61 silly idealTree ├── combined-stream@1.0.5
+61 silly idealTree ├── commander@2.9.0
+61 silly idealTree ├─┬ concat-stream@1.5.2
+61 silly idealTree │ ├── isarray@1.0.0
+61 silly idealTree │ └── readable-stream@2.0.6
+61 silly idealTree ├── core-util-is@1.0.2
+61 silly idealTree ├── cryptiles@2.0.5
+61 silly idealTree ├─┬ dashdash@1.14.0
+61 silly idealTree │ └── assert-plus@1.0.0
+61 silly idealTree ├── debug@2.2.0
+61 silly idealTree ├── delayed-stream@1.0.0
+61 silly idealTree ├── ecc-jsbn@0.1.1
+61 silly idealTree ├── es6-promise@3.0.2
+61 silly idealTree ├── escape-string-regexp@1.0.5
+61 silly idealTree ├── extend@3.0.0
+61 silly idealTree ├── extsprintf@1.0.2
+61 silly idealTree ├── forever-agent@0.6.1
+61 silly idealTree ├─┬ form-data@1.0.1
+61 silly idealTree │ ├── async@2.0.1
+61 silly idealTree │ └── lodash@4.15.0
+61 silly idealTree ├── generate-function@2.0.0
+61 silly idealTree ├── generate-object-property@1.2.0
+61 silly idealTree ├─┬ getpass@0.1.6
+61 silly idealTree │ └── assert-plus@1.0.0
+61 silly idealTree ├── graceful-readlink@1.0.1
+61 silly idealTree ├── har-validator@2.0.6
+61 silly idealTree ├── has-ansi@2.0.0
+61 silly idealTree ├── hawk@3.1.3
+61 silly idealTree ├── hoek@2.16.3
+61 silly idealTree ├── hooks-fixed@1.1.0
+61 silly idealTree ├── http-basic@2.5.1
+61 silly idealTree ├── http-response-object@1.1.0
+61 silly idealTree ├── http-signature@1.1.1
+61 silly idealTree ├── inherits@2.0.1
+61 silly idealTree ├── is-my-json-valid@2.13.1
+61 silly idealTree ├── is-property@1.0.2
+61 silly idealTree ├── is-typedarray@1.0.0
+61 silly idealTree ├── isarray@0.0.1
+61 silly idealTree ├── isstream@0.1.2
+61 silly idealTree ├── jodid25519@1.0.2
+61 silly idealTree ├── jsbn@0.1.0
+61 silly idealTree ├── json-schema@0.2.2
+61 silly idealTree ├── json-stringify-safe@5.0.1
+61 silly idealTree ├── jsonpointer@2.0.0
+61 silly idealTree ├── jsprim@1.3.0
+61 silly idealTree ├── kareem@1.0.1
+61 silly idealTree ├── lodash@3.10.1
+61 silly idealTree ├── mime-db@1.23.0
+61 silly idealTree ├── mime-types@2.1.11
+61 silly idealTree ├── mongodb-core@1.3.16
+61 silly idealTree ├── mongodb@2.1.16
+61 silly idealTree ├── mongoose@4.4.12
+61 silly idealTree ├── mpath@0.2.1
+61 silly idealTree ├── mpromise@0.5.5
+61 silly idealTree ├─┬ mquery@1.10.0
+61 silly idealTree │ └── sliced@0.0.5
+61 silly idealTree ├── ms@0.7.1
+61 silly idealTree ├── muri@1.1.0
+61 silly idealTree ├── node-curl@0.3.3
+61 silly idealTree ├── node-uuid@1.4.7
+61 silly idealTree ├── oauth-sign@0.8.2
+61 silly idealTree ├── pinkie-promise@2.0.1
+61 silly idealTree ├── pinkie@2.0.4
+61 silly idealTree ├── process-nextick-args@1.0.7
+61 silly idealTree ├── promise@7.1.1
+61 silly idealTree ├── qs@6.2.1
+61 silly idealTree ├── readable-stream@1.0.31
+61 silly idealTree ├── regexp-clone@0.0.1
+61 silly idealTree ├─┬ request-promise-core@1.1.1
+61 silly idealTree │ └── lodash@4.15.0
+61 silly idealTree ├─┬ request-promise@4.1.1
+61 silly idealTree │ └── bluebird@3.4.6
+61 silly idealTree ├── request@2.74.0
+61 silly idealTree ├── require_optional@1.0.0
+61 silly idealTree ├── resolve-from@2.0.0
+61 silly idealTree ├── sax@0.6.1
+61 silly idealTree ├── semver@5.1.0
+61 silly idealTree ├── sliced@1.0.1
+61 silly idealTree ├── sntp@1.0.9
+61 silly idealTree ├── split2
+61 silly idealTree ├─┬ sshpk@1.10.0
+61 silly idealTree │ └── assert-plus@1.0.0
+61 silly idealTree ├── stealthy-require@1.0.0
+61 silly idealTree ├── string_decoder@0.10.31
+61 silly idealTree ├── stringstream@0.0.5
+61 silly idealTree ├── strip-ansi@3.0.1
+61 silly idealTree ├── supports-color@2.0.0
+61 silly idealTree ├── sync-request@3.0.1
+61 silly idealTree ├── then-request@2.2.0
+61 silly idealTree ├── tough-cookie@2.3.1
+61 silly idealTree ├── tunnel-agent@0.4.3
+61 silly idealTree ├── tweetnacl@0.13.3
+61 silly idealTree ├── typedarray@0.0.6
+61 silly idealTree ├── util-deprecate@1.0.2
+61 silly idealTree ├── verror@1.3.6
+61 silly idealTree ├── xmlbuilder@2.6.5
+61 silly idealTree ├── xmlrpc@1.3.1
+61 silly idealTree ├── xtend@4.0.1
+61 silly idealTree └── zig
+62 silly generateActionsToTake Starting
+63 silly install generateActionsToTake
+64 silly generateActionsToTake Finishing
+65 silly diffTrees action count 4
+66 silly diffTrees add node-curl@0.3.3
+67 silly diffTrees update request@2.74.0
+68 silly diffTrees update request-promise@4.1.1
+69 silly diffTrees update sync-request@3.0.1
+70 silly decomposeActions action count 32
+71 silly decomposeActions fetch node-curl@0.3.3
+72 silly decomposeActions extract node-curl@0.3.3
+73 silly decomposeActions test node-curl@0.3.3
+74 silly decomposeActions preinstall node-curl@0.3.3
+75 silly decomposeActions build node-curl@0.3.3
+76 silly decomposeActions install node-curl@0.3.3
+77 silly decomposeActions postinstall node-curl@0.3.3
+78 silly decomposeActions finalize node-curl@0.3.3
+79 silly decomposeActions fetch request@2.74.0
+80 silly decomposeActions extract request@2.74.0
+81 silly decomposeActions test request@2.74.0
+82 silly decomposeActions preinstall request@2.74.0
+83 silly decomposeActions build request@2.74.0
+84 silly decomposeActions install request@2.74.0
+85 silly decomposeActions postinstall request@2.74.0
+86 silly decomposeActions finalize request@2.74.0
+87 silly decomposeActions fetch request-promise@4.1.1
+88 silly decomposeActions extract request-promise@4.1.1
+89 silly decomposeActions test request-promise@4.1.1
+90 silly decomposeActions preinstall request-promise@4.1.1
+91 silly decomposeActions build request-promise@4.1.1
+92 silly decomposeActions install request-promise@4.1.1
+93 silly decomposeActions postinstall request-promise@4.1.1
+94 silly decomposeActions finalize request-promise@4.1.1
+95 silly decomposeActions fetch sync-request@3.0.1
+96 silly decomposeActions extract sync-request@3.0.1
+97 silly decomposeActions test sync-request@3.0.1
+98 silly decomposeActions preinstall sync-request@3.0.1
+99 silly decomposeActions build sync-request@3.0.1
+100 silly decomposeActions install sync-request@3.0.1
+101 silly decomposeActions postinstall sync-request@3.0.1
+102 silly decomposeActions finalize sync-request@3.0.1
+103 silly executeActions Starting
+104 silly install executeActions
+105 silly doSerial global-install 0
+106 silly doParallel fetch 4
+107 verbose correctMkdir /Users/marcofaretra/.npm/_locks correctMkdir not in flight; initializing
+108 verbose lock using /Users/marcofaretra/.npm/_locks/staging-fea123122d0fc9ac.lock for /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging
+109 silly doParallel extract 4
+110 silly extract node-curl@0.3.3
+111 silly extract request@2.74.0
+112 silly extract request-promise@4.1.1
+113 silly extract sync-request@3.0.1
+114 verbose unbuild node_modules/.staging/node-curl-dcef0c4a
+115 verbose unbuild node_modules/.staging/request-bd4dc77e
+116 verbose unbuild node_modules/.staging/sync-request-cfa827a9
+117 verbose unbuild node_modules/.staging/request-promise-01c219e9
+118 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a is being purged from base /Users/marcofaretra/Documents/HaltBot/hb-atac
+119 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a
+120 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e is being purged from base /Users/marcofaretra/Documents/HaltBot/hb-atac
+121 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e
+122 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9 is being purged from base /Users/marcofaretra/Documents/HaltBot/hb-atac
+123 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9
+124 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9 is being purged from base /Users/marcofaretra/Documents/HaltBot/hb-atac
+125 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9
+126 verbose tar unpack /Users/marcofaretra/.npm/node-curl/0.3.3/package.tgz
+127 verbose tar unpacking to /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a
+128 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a is being purged
+129 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a
+130 verbose tar unpack /Users/marcofaretra/.npm/request/2.74.0/package.tgz
+131 verbose tar unpacking to /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e
+132 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e is being purged
+133 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e
+134 verbose tar unpack /Users/marcofaretra/.npm/sync-request/3.0.1/package.tgz
+135 verbose tar unpacking to /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9
+136 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9 is being purged
+137 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9
+138 verbose tar unpack /Users/marcofaretra/.npm/request-promise/4.1.1/package.tgz
+139 verbose tar unpacking to /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9
+140 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9 is being purged
+141 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9
+142 silly gunzTarPerm modes [ '755', '644' ]
+143 silly gunzTarPerm modes [ '755', '644' ]
+144 silly gunzTarPerm modes [ '755', '644' ]
+145 silly gunzTarPerm modes [ '755', '644' ]
+146 silly gunzTarPerm extractEntry package.json
+147 silly gunzTarPerm extractEntry package.json
+148 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+149 silly gunzTarPerm extractEntry package.json
+150 silly gunzTarPerm extractEntry package.json
+151 silly gunzTarPerm extractEntry .npmignore
+152 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+153 silly gunzTarPerm extractEntry README.md
+154 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+155 silly gunzTarPerm extractEntry .npmignore
+156 silly gunzTarPerm extractEntry README.md
+157 silly gunzTarPerm extractEntry .npmignore
+158 silly gunzTarPerm extractEntry README.md
+159 silly gunzTarPerm extractEntry .npmignore
+160 silly gunzTarPerm extractEntry README.md
+161 silly gunzTarPerm extractEntry LICENSE
+162 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+163 silly gunzTarPerm extractEntry index.js
+164 silly gunzTarPerm extractEntry binding.gyp
+165 silly gunzTarPerm extractEntry LICENSE
+166 silly gunzTarPerm extractEntry browser.js
+167 silly gunzTarPerm extractEntry index.js
+168 silly gunzTarPerm extractEntry .travis.yml
+169 silly gunzTarPerm extractEntry lib/worker.js
+170 silly gunzTarPerm extractEntry lib/json-buffer/README.md
+171 silly gunzTarPerm extractEntry lib/json-buffer/LICENSE
+172 silly gunzTarPerm extractEntry lib/json-buffer/index.js
+173 silly gunzTarPerm extractEntry test/external-test.js
+174 silly gunzTarPerm extractEntry test/fake-server.js
+175 silly gunzTarPerm extractEntry test/index.js
+176 silly gunzTarPerm extractEntry test/internal-test.js
+177 silly gunzTarPerm extractEntry LICENSE
+178 silly gunzTarPerm extractEntry errors.js
+179 silly gunzTarPerm extractEntry lib/rp.js
+180 silly gunzTarPerm extractEntry index.js
+181 silly gunzTarPerm modified mode [ 'index.js', 509, 493 ]
+182 silly gunzTarPerm extractEntry request.js
+183 silly gunzTarPerm modified mode [ 'request.js', 436, 420 ]
+184 silly gunzTarPerm extractEntry .travis.yml
+185 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+186 silly gunzTarPerm extractEntry examples/curl.js
+187 silly gunzTarPerm extractEntry examples/low-level.js
+188 silly gunzTarPerm extractEntry codecov.yml
+189 silly gunzTarPerm modified mode [ 'codecov.yml', 436, 420 ]
+190 silly gunzTarPerm extractEntry CHANGELOG.md
+191 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+192 silly gunzTarPerm extractEntry examples/post-multi-part.js
+193 silly gunzTarPerm extractEntry examples/test.js
+194 silly gunzTarPerm extractEntry lib/auth.js
+195 silly gunzTarPerm modified mode [ 'lib/auth.js', 436, 420 ]
+196 silly gunzTarPerm extractEntry lib/cookies.js
+197 silly gunzTarPerm modified mode [ 'lib/cookies.js', 436, 420 ]
+198 silly gunzTarPerm extractEntry examples/low-level-pressure.js
+199 silly gunzTarPerm extractEntry examples/test-stream.js
+200 silly gunzTarPerm extractEntry examples/pressure-multi-post.js
+201 silly gunzTarPerm extractEntry examples/test-get-info.js
+202 silly gunzTarPerm extractEntry examples/test-errors.js
+203 silly gunzTarPerm extractEntry examples/quick-start.js
+204 silly gunzTarPerm extractEntry examples/post.js
+205 silly gunzTarPerm extractEntry examples/pressure.js
+206 silly gunzTarPerm extractEntry examples/pressure.toffee
+207 silly gunzTarPerm extractEntry examples/curl.toffee
+208 silly gunzTarPerm extractEntry examples/test-errors.toffee
+209 silly gunzTarPerm extractEntry examples/pressure-multi-post.toffee
+210 silly gunzTarPerm extractEntry examples/post.toffee
+211 silly gunzTarPerm extractEntry examples/test-stream.toffee
+212 silly gunzTarPerm extractEntry examples/post-multi-part.toffee
+213 silly gunzTarPerm extractEntry examples/test.toffee
+214 silly gunzTarPerm extractEntry .travis.yml
+215 silly gunzTarPerm extractEntry index.toffee
+216 silly gunzTarPerm extractEntry lib/Curl.js
+217 silly gunzTarPerm extractEntry lib/CurlBuilder.js
+218 silly gunzTarPerm extractEntry lib/Curl.toffee
+219 silly gunzTarPerm extractEntry lib/CurlBuilder.toffee
+220 silly gunzTarPerm extractEntry LICENSE-MIT
+221 silly gunzTarPerm extractEntry src/generate_curl_options_list.sh
+222 silly gunzTarPerm extractEntry src/node-curl.cc
+223 silly gunzTarPerm extractEntry src/node-curl.h
+224 silly gunzTarPerm extractEntry wscript
+225 silly gunzTarPerm extractEntry lib/getProxyFromURI.js
+226 silly gunzTarPerm modified mode [ 'lib/getProxyFromURI.js', 436, 420 ]
+227 silly gunzTarPerm extractEntry lib/har.js
+228 silly gunzTarPerm modified mode [ 'lib/har.js', 436, 420 ]
+229 silly gunzTarPerm extractEntry lib/helpers.js
+230 silly gunzTarPerm modified mode [ 'lib/helpers.js', 436, 420 ]
+231 silly gunzTarPerm extractEntry lib/multipart.js
+232 silly gunzTarPerm modified mode [ 'lib/multipart.js', 436, 420 ]
+233 silly gunzTarPerm extractEntry lib/oauth.js
+234 silly gunzTarPerm modified mode [ 'lib/oauth.js', 436, 420 ]
+235 silly gunzTarPerm extractEntry lib/querystring.js
+236 silly gunzTarPerm modified mode [ 'lib/querystring.js', 436, 420 ]
+237 silly gunzTarPerm extractEntry lib/redirect.js
+238 silly gunzTarPerm modified mode [ 'lib/redirect.js', 436, 420 ]
+239 silly gunzTarPerm extractEntry lib/tunnel.js
+240 silly gunzTarPerm modified mode [ 'lib/tunnel.js', 436, 420 ]
+241 silly gunzTarPerm extractEntry CONTRIBUTING.md
+242 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+243 silly gunzTarPerm extractEntry .eslintrc
+244 silly gunzTarPerm modified mode [ '.eslintrc', 436, 420 ]
+245 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9/node_modules is being purged
+246 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9/node_modules
+247 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9/node_modules is being purged
+248 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9/node_modules
+249 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e/node_modules is being purged
+250 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e/node_modules
+251 silly gentlyRm /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a/node_modules is being purged
+252 verbose gentlyRm don't care about contents; nuking /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a/node_modules
+253 silly doParallel preinstall 4
+254 silly preinstall node-curl@0.3.3 /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a
+255 info lifecycle node-curl@0.3.3~preinstall: node-curl@0.3.3
+256 silly preinstall request@2.74.0 /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-bd4dc77e
+257 info lifecycle request@2.74.0~preinstall: request@2.74.0
+258 silly preinstall request-promise@4.1.1 /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/request-promise-01c219e9
+259 info lifecycle request-promise@4.1.1~preinstall: request-promise@4.1.1
+260 silly preinstall sync-request@3.0.1 /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/sync-request-cfa827a9
+261 info lifecycle sync-request@3.0.1~preinstall: sync-request@3.0.1
+262 silly lifecycle node-curl@0.3.3~preinstall: no script for preinstall, continuing
+263 silly lifecycle request@2.74.0~preinstall: no script for preinstall, continuing
+264 silly lifecycle request-promise@4.1.1~preinstall: no script for preinstall, continuing
+265 silly lifecycle sync-request@3.0.1~preinstall: no script for preinstall, continuing
+266 silly doReverseSerial remove 0
+267 silly doSerial move 0
+268 silly doSerial finalize 4
+269 silly finalize /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/node-curl
+270 silly finalize /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/request
+271 silly finalize /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/request-promise
+272 silly finalize /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/sync-request
+273 silly doSerial build 4
+274 silly build node-curl@0.3.3
+275 info linkStuff node-curl@0.3.3
+276 silly linkStuff node-curl@0.3.3 has /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules as its parent node_modules
+277 verbose linkBins node-curl@0.3.3
+278 verbose linkMans node-curl@0.3.3
+279 silly build request@2.74.0
+280 info linkStuff request@2.74.0
+281 silly linkStuff request@2.74.0 has /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules as its parent node_modules
+282 verbose linkBins request@2.74.0
+283 verbose linkMans request@2.74.0
+284 silly build request-promise@4.1.1
+285 info linkStuff request-promise@4.1.1
+286 silly linkStuff request-promise@4.1.1 has /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules as its parent node_modules
+287 verbose linkBins request-promise@4.1.1
+288 verbose linkMans request-promise@4.1.1
+289 silly build sync-request@3.0.1
+290 info linkStuff sync-request@3.0.1
+291 silly linkStuff sync-request@3.0.1 has /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules as its parent node_modules
+292 verbose linkBins sync-request@3.0.1
+293 verbose linkMans sync-request@3.0.1
+294 silly doSerial global-link 0
+295 silly doParallel update-linked 0
+296 silly doSerial install 4
+297 silly install node-curl@0.3.3 /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging/node-curl-dcef0c4a
+298 info lifecycle node-curl@0.3.3~install: node-curl@0.3.3
+299 verbose lifecycle node-curl@0.3.3~install: unsafe-perm in lifecycle false
+300 verbose lifecycle node-curl@0.3.3~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/node-curl/node_modules/.bin:/Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+301 verbose lifecycle node-curl@0.3.3~install: CWD: /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/node-curl
+302 silly lifecycle node-curl@0.3.3~install: Args: [ '-c',
+302 silly lifecycle   'sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)' ]
+303 info lifecycle node-curl@0.3.3~install: Failed to exec install script
+304 verbose unlock done using /Users/marcofaretra/.npm/_locks/staging-fea123122d0fc9ac.lock for /Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/.staging
+305 silly rollbackFailedOptional Starting
+306 silly rollbackFailedOptional Finishing
+307 silly runTopLevelLifecycles Starting
+308 silly runTopLevelLifecycles Finishing
+309 silly install printInstalled
+310 warn enoent ENOENT: no such file or directory, open '/Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/zig/package.json'
+311 warn enoent ENOENT: no such file or directory, open '/Users/marcofaretra/Documents/HaltBot/hb-atac/node_modules/split2/package.json'
+312 verbose stack Error: node-curl@0.3.3 install: `sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)`
+312 verbose stack spawn ENOENT
+312 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+312 verbose stack     at emitTwo (events.js:100:13)
+312 verbose stack     at ChildProcess.emit (events.js:185:7)
+312 verbose stack     at maybeClose (internal/child_process.js:850:16)
+312 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+313 verbose pkgid node-curl@0.3.3
+314 verbose cwd /Users/marcofaretra/Documents/HaltBot/hb-atac/src
+315 error Darwin 15.5.0
+316 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node-curl"
+317 error node v5.9.0
+318 error npm  v3.7.3
+319 error file sh
+320 error code ELIFECYCLE
+321 error errno ENOENT
+322 error syscall spawn
+323 error node-curl@0.3.3 install: `sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)`
+323 error spawn ENOENT
+324 error Failed at the node-curl@0.3.3 install script 'sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)'.
+324 error Make sure you have the latest version of node.js and npm installed.
+324 error If you do, this is most likely a problem with the node-curl package,
+324 error not with npm itself.
+324 error Tell the author that this fails on your system:
+324 error     sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)
+324 error You can get information on how to open an issue for this project with:
+324 error     npm bugs node-curl
+324 error Or if that isn't available, you can get their info via:
+324 error     npm owner ls node-curl
+324 error There is likely additional logging output above.
+325 verbose exit [ 1, true ]
