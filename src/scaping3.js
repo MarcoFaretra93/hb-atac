@@ -28,10 +28,10 @@ file.map(function(value) {
 	});
 });
 
-console.log(temp);
-
 for(element in temp) {
+	console.log(temp);
 	var r = request(temp[element], function(error, response, body) {
+		console.log('arrivo');
 		var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: body});
 		entry.save(function(err, data) {
 			if(err) console.log(err);
