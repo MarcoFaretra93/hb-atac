@@ -20,13 +20,15 @@ var SchedeTecniche = mongoose.model('SchedeTecniche', htmlSchema);
 
 var temp = []
 
-file.map(function(value) {
+/*file.map(function(value) {
 	Object.keys(value.models).map(function(key) {
 		value.models[key].map(function(v) {
 			temp.push('http://www.assicurazione.it'+v.next+ ' ');
 		});
 	});
-});
+});*/
+
+temp = ['https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:sort=instanceId'];
 
 for(element in temp) {
 	var res = request('GET', temp[element]);
