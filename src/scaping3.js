@@ -1,5 +1,5 @@
 var file = require('./file2.json');
-var request = require('sync-request');
+var request = require('request');
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/schedetecniche');
@@ -28,19 +28,37 @@ file.map(function(value) {
 	});
 });
 
+
+
 for(element in temp) {
-	var res = request('GET', temp[element]);
-	var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: res.getBody()});
+	var url = temp[element];
+
+	requestp(url, true).then(function (data) {
+	    var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: data});
 		entry.save(function(err, data) {
 			if(err) console.log(err);
-			else console.log('fatto'+ element);
+			else console.log('fatto');
+		});
+	}, function (err) {
+	    console.error("%s; %s", err.message, url);
+	    console.log("%j", err.res.statusCode);
 	});
 
-		/*fs.writeFile("/Users/marcofaretra/Documents/scraping_assicurazioni/assicurazione_html/" + temp[element].slice(28).replace('/','_') + ".html", body, function(err) {
-		    if(err) {
-		        return console.log(err);
-		    }
+	function requestp(url, json) {
+	    json = json || false;
+	    return new Promise(function (resolve, reject) {
+	        request({url:url, json:json}, function (err, res, body) {
+	            if (err) {
+	                return reject(err);
+	            } else if (res.statusCode !== 200) {
+	                err = new Error("Unexpected status code: " + res.statusCode);
+	                err.res = res;
+	                return reject(err);
+	            }
+	            resolve(body);
+	        });
+	    });
+	}
 
-		    console.log("The file was saved!");
-		});*/
+
 }
