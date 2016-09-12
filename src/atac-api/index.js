@@ -42,10 +42,12 @@ seneca.add({role:'atac', cmd:'getTempiPaletta'}, function(args, callback) {
 
 seneca.add({role:'atac', cmd:'getCapolinea'}, function(args, callback) {
   var ricerca = args.capolinea;
+  console.log(ricerca);
   client.methodCall('paline.SmartSearch', [codice, ricerca], function(error, value) {
     if(error && error.code == 824) {
       var tokenAtac = autenticazioneAtac(function(tokenAtac) {
         client.methodCall('paline.SmartSearch', [tokenAtac, ricerca], function(error, value) {
+            console.log(value);
             callback(null, {getCapolinea:value});
         });
       })
