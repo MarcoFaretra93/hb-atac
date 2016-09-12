@@ -20,9 +20,9 @@ var SchedeTecniche = mongoose.model('SchedeTecniche', htmlSchema);
 
 var temp = []
 
-file.map((value) => {
-	Object.keys(value.models).map((key) => {
-		value.models[key].map(v => {
+file.map(function(value) {
+	Object.keys(value.models).map(function(key) {
+		value.models[key].map(function(v) {
 			temp.push('http://www.assicurazione.it'+v.next+ ' ');
 		});
 	});
