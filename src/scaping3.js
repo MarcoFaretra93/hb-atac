@@ -1,5 +1,6 @@
 var file = require('./file2.json');
 var request = require('request');
+var Promise = require('promise');
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/schedetecniche');
@@ -27,7 +28,6 @@ file.map(function(value) {
 		});
 	});
 });
-
 
 
 for(element in temp) {
