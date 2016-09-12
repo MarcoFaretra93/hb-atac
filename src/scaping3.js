@@ -20,15 +20,13 @@ var SchedeTecniche = mongoose.model('SchedeTecniche', htmlSchema);
 
 var temp = []
 
-/*file.map((value) => {
+file.map((value) => {
 	Object.keys(value.models).map((key) => {
 		value.models[key].map(v => {
 			temp.push('http://www.assicurazione.it'+v.next+ ' ');
 		});
 	});
-});*/
-
-temp = ['http://www.assicurazione.it/alfa_romeo/145_14_tspark_16v_abs_air_bag_ac.html']
+});
 
 
 
