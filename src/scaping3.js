@@ -28,14 +28,14 @@ file.map(function(value) {
 	});
 });
 
-
+console.log(temp);
 
 for(element in temp) {
 	var r = request(temp[element], function(error, response, body) {
 		var entry = new SchedeTecniche({id: temp[element].slice(28).replace('/','_'), html: body});
 		entry.save(function(err, data) {
 			if(err) console.log(err);
-			else console.log('fatto');
+			else console.log('fatto'+ element);
 		});
 		/*fs.writeFile("/Users/marcofaretra/Documents/scraping_assicurazioni/assicurazione_html/" + temp[element].slice(28).replace('/','_') + ".html", body, function(err) {
 		    if(err) {
